@@ -1,0 +1,305 @@
+<html>
+
+<head>
+<title>Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background: #2c3e50;
+}
+body::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 15px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #FFD700;
+}
+
+.menu-container {
+    padding: 15px 0 30px 20px;
+}
+
+.menu-section {
+    color: #FFD700;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 10px 8px 10px;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.menu-section-first {
+    margin-top: 0;
+    padding-top: 5px;
+}
+.menu-section .badge {
+    background: #e74c3c;
+    color: white;
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+    letter-spacing: 0;
+}
+
+.menu-item {
+    list-style: none;
+    padding: 0;
+}
+.menu-item li {
+    margin-bottom: 2px;
+    list-style: none;
+}
+.menu-item li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    padding: 8px 12px 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.menu-item li a:hover {
+    background: rgba(52, 152, 219, 0.3);
+    padding-left: 18px;
+    color: #FFD700;
+}
+.menu-item li a .icon {
+    margin-right: 10px;
+    font-size: 16px;
+}
+.menu-item li a .num-badge {
+    font-size: 10px;
+    color: #FFD700;
+    background: rgba(255, 215, 0, 0.15);
+    padding: 1px 8px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+.menu-item li a .status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+.menu-item li a .status-dot.active {
+    background: #2ecc71;
+    animation: pulse 2s infinite;
+}
+.menu-item li a .status-dot.inactive {
+    background: #e74c3c;
+}
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 10px 10px;
+}
+
+.sub-menu {
+    padding-left: 20px;
+}
+.sub-menu li a {
+    font-size: 13px !important;
+    padding: 5px 12px 5px 5px !important;
+}
+.sub-menu li a .icon {
+    font-size: 13px !important;
+}
+
+.back-home-container {
+    text-align: center;
+    padding: 15px 0 10px 0;
+    margin-top: 10px;
+}
+.back-home {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFD700, #FDB931);
+    color: #2c3e50;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.back-home:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+}
+
+/* Admin section special */
+.menu-section.admin {
+    color: #e74c3c;
+    border-bottom-color: rgba(231, 76, 60, 0.3);
+}
+.menu-section.admin .badge {
+    background: #e74c3c;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu-container">
+
+    <!-- ===== MENU INFORMASI ===== -->
+    <div class="menu-section menu-section-first"> INFORMASI</div>
+    <ul class="menu-item">
+        <li><a href="sejarah.html" target="kanan"></span> Sejarah</a></li>
+        <li><a href="peta.html" target="kanan"></span> Peta Wilayah</a></li>
+        <li><a href="desa.html" target="kanan"></span> Daftar Desa</a></li>
+        <li><a href="struktur.html" target="kanan"></span> Struktur Organisasi</a></li>
+        <li><a href="visimisi.html" target="kanan"></span> Visi &amp; Misi</a></li>
+        <li><a href="proker.html" target="kanan"></span> Program Kerja</a></li>
+    </ul>
+
+    <hr class="separator">
+
+    <!-- ===== MENU POTENSI ===== -->
+    <div class="menu-section">POTENSI</div>
+    <ul class="menu-item">
+        <li><a href="ponomi.html" target="kanan"></span> Potensi Ekonomi</a></li>
+        <li><a href="wisata.html" target="kanan"></span> Potensi Pariwisata</a></li>
+        <li><a href="sekolah.html" target="kanan"></span> Daftar Sekolah</a></li>
+        <li><a href="industry.html" target="kanan"></span> Daftar Industri</a></li>
+    </ul>
+
+    <hr class="separator">
+
+    <!-- ===== MENU ADMIN - ===== -->
+    <div class="menu-section admin">ADMIN</span></div>
+    <ul class="menu-item">
+
+        <!-- 11. Login dengan session -->
+        <li>
+            <a href="login" target="kanan">
+                <span class=</span> Login System
+            </a>
+        </li>
+
+        <!-- 12. CRUD User -->
+        <li>
+            <a href="admin/users.php" target="kanan">
+                <span class=</span> Manajemen User
+            </a>
+        </li>
+
+        <!-- 13. Formulir Pendaftaran KTP -->
+        <li>
+            <a href="admin/ktp_form.php" target="kanan">
+                <span class="icon">📝</span> Formulir KTP
+                <span class="num-badge">#13</span>
+            </a>
+        </li>
+
+        <!-- 14. CRUD Data KTP -->
+        <li>
+            <a href="admin/ktp.php" target="kanan">
+                <span class="icon">📋</span> Data KTP
+                <span class="num-badge">#14</span>
+            </a>
+        </li>
+
+        <!-- 15. Tabel Komoditas -->
+        <li>
+            <a href="admin/komoditas.php" target="kanan">
+                <span class="icon">🌾</span> Komoditas
+                <span class="num-badge">#15</span>
+            </a>
+        </li>
+
+        <!-- 16. CRUD Data Komoditas -->
+        <li>
+            <a href="admin/komoditas_add.php" target="kanan">
+                <span class="icon">➕</span> CRUD Komoditas
+                <span class="num-badge">#16</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <hr class="separator">
+
+    <!-- ===== MENU PROFIL ===== -->
+    <div class="menu-section">👤 PROFIL</div>
+    <ul class="menu-item">
+        <li><a href="pages/profil_pengembang.html" target="kanan"><span class="icon">👨‍💻</span> Profil Pengembang</a></li>
+    </ul>
+
+</div>
+
+<!-- Tombol Back to Home -->
+<div class="back-home-container">
+    <a href="home.html" target="kanan" class="back-home">
+        🏠 BACK TO HOME
+    </a>
+</div>
+
+<script>
+// Cek status login dari localStorage
+function updateLoginStatus() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    const dot = document.getElementById('loginDot');
+    if (dot) {
+        dot.className = 'status-dot ' + (isLoggedIn ? 'active' : 'inactive');
+    }
+}
+
+// Update saat halaman dimuat
+updateLoginStatus();
+
+// Listen untuk perubahan
+window.addEventListener('storage', function(e) {
+    if (e.key === 'isLoggedIn') {
+        updateLoginStatus();
+    }
+});
+
+// Listen untuk pesan dari iframe
+window.addEventListener('message', function(e) {
+    if (e.data === 'login_success') {
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('username', e.data.username || 'User');
+        updateLoginStatus();
+    }
+    if (e.data === 'logout') {
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('username');
+        updateLoginStatus();
+    }
+});
+</script>
+
+</body>
+
+</html>
